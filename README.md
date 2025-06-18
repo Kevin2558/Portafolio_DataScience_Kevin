@@ -33,7 +33,7 @@ Soy estudiante de Ingeniería Matemática en la Universidad de Santiago de Chile
 
 ## 📫 Contacto
 
-- 📧 kevin.ortiz.c@usach.cl
+- 📧 kevin.ortiz@usach.cl
 - 💼 [LinkedIn](https://www.linkedin.com/in/kevin-ortiz-collao-16376a275)
 - 📂 [Repositorio general de GitHub](https://github.com/Kevin2558)
 

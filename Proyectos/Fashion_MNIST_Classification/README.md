@@ -54,4 +54,4 @@ Nota: Los modelos se entrenaron tanto en los datos originales como en los datos 
 
 * **Kevin Ortiz**
 * [GitHub](https://github.com/Kevin2558)
-* [LinkedIn](https://www.linkedin.com/in/tu-perfil-linkedin/)
+* [LinkedIn](https://www.linkedin.com/in/kevin-ortiz-collao-16376a275/)

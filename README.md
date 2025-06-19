@@ -12,6 +12,7 @@ Soy estudiante de Ingeniería Matemática en la Universidad de Santiago de Chile
 |---------|-------------|--------------------------|
 | Credit Card Fraud | Detección de transacciones fraudulentas con tarjetas de crédito | Balanceo de clases, Regresión Logísta, Random Forest |
 | Fashion MNIST | Clasificación de imágenes de artículos de moda | PCA, Regresión Logística, SVM, KNN |
+| Energy Efficiency | Predecir la eficiencia energética de edificios residenciales | Regresión Lineal, Regrsión Ridge, Random Forest |
 ---
 
 ## 🧠 Áreas de conocimiento aplicadas

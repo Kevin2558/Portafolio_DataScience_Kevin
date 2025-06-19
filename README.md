@@ -29,7 +29,12 @@ Soy estudiante de Ingeniería Matemática en la Universidad de Santiago de Chile
 
 ## 📌 Próximos proyectos en desarrollo
 
-
+- Scoring de crédito para predecir impago
+- Predicción de abandono de clientes bancarios (churn)
+- Clasificación de reclamos de clientes por temática
+- Predicción de demanda energética residencial
+- Clasificación de tipos de desperdicio para reciclaje automatizado
+- Detección de enfermedades respiratorias a partir de sonidos de tos
 
 ---
 

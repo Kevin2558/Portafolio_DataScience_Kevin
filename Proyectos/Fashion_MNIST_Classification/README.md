@@ -52,6 +52,6 @@ Nota: Los modelos se entrenaron tanto en los datos originales como en los datos 
 
 ## Autor
 
-* **Kevin Ortiz**
+* **Kevin Ortiz, Almendra Orellana, Jorge Pastene**
 * [GitHub](https://github.com/Kevin2558)
 * [LinkedIn](https://www.linkedin.com/in/kevin-ortiz-collao-16376a275/)

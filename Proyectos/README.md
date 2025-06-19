@@ -2,15 +2,6 @@
 
 En esta carpeta se encuentran los proyectos aplicados de Ciencia de Datos desarrollados por Kevin Ortiz. Cada uno aborda un problema específico utilizando datos reales o simulados, aplicando técnicas de análisis, modelado, y visualización.
 
----
-
-## Proyectos incluidos
-
-| Proyecto | Descripción | Técnicas |
-|---------|-------------|----------|
-
----
-
 ## Metodología común
 
 - Limpieza y exploración de datos

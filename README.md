@@ -11,6 +11,7 @@ Soy estudiante de Ingeniería Matemática en la Universidad de Santiago de Chile
 | Proyecto | Descripción | Técnicas / Herramientas |
 |---------|-------------|--------------------------|
 | Credit Card Fraud | Detección de transacciones fraudulentas con tarjetas de crédito | Balanceo de clases, Regresión Logísta, Random Forest |
+| Fashion MNIST | Clasificación de imágenes de artículos de moda | PCA, Regresión Logística, SVM, KNN |
 ---
 
 ## 🧠 Áreas de conocimiento aplicadas

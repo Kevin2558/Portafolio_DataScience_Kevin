@@ -10,7 +10,7 @@ Soy estudiante de Ingeniería Matemática en la Universidad de Santiago de Chile
 
 | Proyecto | Descripción | Técnicas / Herramientas |
 |---------|-------------|--------------------------|
-
+| Credit Card Fraud | Detección de transacciones fraudulentas con tarjetas de crédito | Balanceo de clases, Regresión Logísta, Random Forest |
 ---
 
 ## 🧠 Áreas de conocimiento aplicadas

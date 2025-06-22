@@ -10,7 +10,7 @@ Soy estudiante de Ingeniería Matemática en la Universidad de Santiago de Chile
 
 | Proyecto | Descripción | Técnicas / Herramientas |
 |---------|-------------|--------------------------|
-| Stellar Objects Classification | Clasificación de objetos estelares (estrellas, galaxias y quásares) | Detección de outliers, Balanceo de clases, t-SNE, MLP |
+| Stellar Objects | Clasificación de objetos estelares (estrellas, galaxias y quásares) | Detección de outliers, Balanceo de clases, t-SNE, MLP |
 | Credit Card Fraud | Detección de transacciones fraudulentas con tarjetas de crédito | Balanceo de clases, Regresión Logísta, Random Forest |
 | Fashion MNIST | Clasificación de imágenes de artículos de moda | PCA, Regresión Logística, SVM, KNN |
 | Energy Efficiency | Predecir la eficiencia energética de edificios residenciales | Regresión Lineal, Regresión Ridge, Random Forest |

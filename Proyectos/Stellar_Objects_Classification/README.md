@@ -10,18 +10,29 @@ Este proyecto busca desarrollar un modelo de clasificación que sea capaz de ide
 * **Fuente:** [Enlace de Kaggle al dataset](https://www.kaggle.com/code/farazrahman/predicting-star-galaxy-quasar-with-svm)
 * **Descripción Breve:** Este dataset consiste en una colección de 10.000 observaciones del espacio tomadas por la Sloan Digital Sky Survey. Cada observación está descrita por 17 características y una variable objetivo la cual identifica la observación como una estrella, una galaxia o un quásar.
 
-## Objetivos del Proyecto
+## Objetivos generales del proyecto
+
+El proyecto se enfoca principalmente en construir un modelo de clasificación de objetos estelares en ayuda de aficionados por la astronomía con y sin experiencia que deseen identificar, a través de magnitudes físicas y/o imágenes, lo que observan en el cielo.
+
+El proyecto se separa en dos aristas. Primero analizaremos las magnitudes fotométricas de los objetos en distintos rangos de longitud de onda y luego analizaremos imágenes de estrellas y galaxias. Estos dos enfoques buscan comprender un gran número de personas, en distinto niveles de conocimiento de astronomía.
+
+## Objetivos técnicos del proyecto
 
 Los principales objetivos de este proyecto fueron:
 
 1. Realizar un análisis exploratorio del dataset SDSS, evaluando la distribución de clases, presencia de outliers y relaciones entre características.
-2. Aplicar técnicas de preprocesamiento de datos, incluyendo normalización, tratamiento de datos faltantes y balanceo de clases (si son necesarias).
-3. Visualizar los datos en espacios de baja dimensión (2D o 3D) para identificar agrupamientos y facilitar el entendimiento de la estructura del dataset.
-4. Diseñar, entrenar y evaluar distintos modelos de clasificación, medir su rendimiento y compararlos.
+2. Aplicar técnicas de preprocesamiento de datos, incluyendo normalización, tratamiento de datos faltantes y balanceo de clases (si son necesarias). Para el caso de las imágenes aplicar técnicas de preprocesamiento de imágenes, antes de entrar a la red neuronal.
+3. Visualizar los datos en espacios de baja dimensión (2D o 3D) para identificar agrupamientos y facilitar el entendimiento de la estructura del dataset. 
+4. Diseñar, entrenar y evaluar distintos modelos de clasificación, medir su rendimiento y compararlos. Diseñar, entrenar y evaluar una CNN para clasificar imágenes de los objetos estelares.
 5. Interpretar el proceso de decisión de cada uno de los modelos, integrando visualizaciones de sus fronteras de decisión.
-6. Sintetizar los hallazgos, discutir los resultados de cada proceso y decicidir el modelo más atractivo a utilizar.
+6. Visualizar las imágenes de los objetos estelares e incorporar imágenes externas al dataset para evaluar la clasifición de la CNN.
+7. Sintetizar los hallazgos, discutir los resultados de cada proceso y decicidir el modelo más atractivo a utilizar.
 
 ## Metodología
+
+---
+
+### Parte 1
 
 El proceso seguido en este proyecto incluyó las siguientes etapas:
 
@@ -36,13 +47,21 @@ El proceso seguido en este proyecto incluyó las siguientes etapas:
     * Multilayer Perceptron
 5.  **Evaluación:** El rendimiento de los modelos fue evaluado utilizando métricas como Precisión, Recall, F1-score y Matrices de Confusión, debido al evidente desequilibrio de las clases.
 
+### Parte 2
+
 ## Resultados y Conclusiones Clave
+
+---
+
+### Parte 1
 
 * **Características importantes:** El dataset posee 18 variables y en general no aportan gran información para este proyecto, por lo que se toma en cuenta las variables u, g, r, i, z y redshift. 
 * **Outliers:** El dataset posee un porcentaje considerable de outliers, por lo que se decide aplicar RobustScaler para evitar que conlleven errores al momento de entrenar los modelos.
 * **Modelado:** Los modelos k-NN, RF y XGB tienden a tener fronteras de decisión más lineales, unas más complejas que otras y los modelos SVC y MLP tienden a tener fronteras de decisión más curvas y suaves. Tomando en cuenta las métras antes mencionadas los mejores modelos obtenidos fueron XGBoost y MLP (100,50,25), donde XGBoost brilla por su rendimiento y MLP (100,50,25) por su entendimiento profundo de las clases.
 * **Optimización:** Se tomaron los dos mejores modelos y se procede a optimizar sus hiperparámetros en busca del mejor modelo. Se determina que en terminos de rendimiento XGBoost sigue siendo mejor pero alcanza a igual la precisión de MLP.
-* **Desafios:** Ante la ventaja a nivel de precisión de MLP, se espera proceder a utilizar redes neuronales convolucionales para tratamiento de fotografías de objetos estelares y así no necesitar las variables fotométricas para clasificar.
+* **Desafios:** Ante la ventaja a nivel de precisión de MLP, se espera proceder a utilizar redes neuronales convolucionales para tratamiento de imágenes de objetos estelares y así no necesitar las variables fotométricas para clasificar.
+
+### Parte 2
 
 ## Tecnologías y Librerías Utilizadas
 

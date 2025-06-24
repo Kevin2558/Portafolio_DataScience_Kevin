@@ -30,8 +30,6 @@ Los principales objetivos de este proyecto fueron:
 
 ## Metodología
 
----
-
 ### Parte 1
 
 El proceso seguido en este proyecto incluyó las siguientes etapas:
@@ -50,8 +48,6 @@ El proceso seguido en este proyecto incluyó las siguientes etapas:
 ### Parte 2
 
 ## Resultados y Conclusiones Clave
-
----
 
 ### Parte 1
 

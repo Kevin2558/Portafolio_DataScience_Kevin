@@ -47,6 +47,16 @@ El proceso seguido en este proyecto incluyó las siguientes etapas:
 
 ### Parte 2
 
+El proceso seguido en esta parte del proyecto incluyó las siguientes etapas:
+
+1.  **Carga y Exploración de Datos (EDA):** Se cargaron las imágenes del dataset y se visualizó un ejemplo de cada clase (estrella y galaxia) para comprender la naturaleza de los datos de imagen.
+2.  **Preprocesamiento de Datos:** Se aplicaron transformaciones a las imágenes, incluyendo redimensionamiento, conversión a tensor y normalización. Posteriormente, el dataset fue dividido en conjuntos de entrenamiento y prueba, y se crearon DataLoaders para manejar la carga de datos en mini-batches.
+3.  **Modelado:** Se entrenaron dos modelos de Redes Neuronales Convolucionales (CNN):
+    *   Una CNN simple diseñada desde cero.
+    *   Un modelo pre-entrenado (ResNet-18) adaptado mediante Fine-Tuning.
+4.  **Visualización:** Se utilizaron técnicas de visualización como la visualización de predicciones en un lote de imágenes y Grad-CAM para entender qué partes de las imágenes influyen en las decisiones del modelo.
+5.  **Evaluación:** El rendimiento de los modelos fue evaluado utilizando métricas como Precisión, Recall, F1-score y Matrices de Confusión para comparar el desempeño de la CNN simple y el modelo basado en Transfer Learning.
+
 ## Resultados y Conclusiones Clave
 
 ### Parte 1
@@ -59,19 +69,60 @@ El proceso seguido en este proyecto incluyó las siguientes etapas:
 
 ### Parte 2
 
+*   **Dataset:** Se utilizó un dataset de imágenes de objetos estelares (estrellas y galaxias) capturadas por el telescopio de 1.3 metros del observatorio ARIES, en Nainnital, India.
+*   **Preprocesamiento:** Las imágenes fueron redimensionadas, convertidas a tensores y normalizadas. El dataset se dividió en conjuntos de entrenamiento y prueba, y se crearon DataLoaders para la carga de datos.
+*   **Modelado:** Se entrenaron dos modelos CNN: una CNN simple diseñada desde cero y un modelo pre-entrenado (ResNet-18) con Fine-Tuning.
+*   **Visualización:** La visualización con Grad-CAM mostró que la CNN simple se enfoca en los cambios de luminosidad centrales, mientras que ResNet-18 es más sensible a las variaciones de luminosidad a lo largo del eje horizontal.
+*   **Evaluación:** La CNN simple obtuvo una mayor precisión global (90%) en comparación con ResNet-18 (79%), con mejores métricas de precisión, recall y f1-score para ambas clases. Esto sugiere que la arquitectura simple fue más adecuada para este dataset específico.
+*   **Desafíos:** Aunque la CNN simple tuvo un buen rendimiento, se podrían explorar técnicas de aumento de datos más robustas y arquitecturas más recientes para mejorar la generalización en trabajos futuros.
+
 ## Tecnologías y Librerías Utilizadas
 
-* Python 3
-* `pandas`
-* `numpy`
-* `scikit-learn`
-* `matplotlib`
-* `seaborn`
-* `xgboost`
-* `imblearn`
+Este proyecto utilizó principalmente Python y las siguientes librerías:
 
+**Parte 1 (Clasificación con Magnitudes Fotométricas):**
+
+*   **pandas**
+*   **numpy**
+*   **matplotlib.pyplot** 
+*   **seaborn**
+*   **sklearn (scikit-learn):**
+    *   `model_selection`
+    *   `preprocessing`
+    *   `metrics`
+    *   `manifold`
+    *   `neural_network`
+    *   `ensemble`
+    *   `neighbors`
+    *   `svm`
+*   **imblearn (imbalanced-learn):**
+    *   `over_sampling`
+    *   `pipeline`
+*   **xgboost** 
+*   **scipy**
+
+**Parte 2 (Clasificación con Imágenes):**
+
+*   **torch** 
+*   **torch.nn**
+*   **torch.nn.functional** 
+*   **matplotlib.pyplot** 
+*   **PIL (Pillow)** 
+*   **torchvision:**
+    *   `transforms`
+    *   `datasets`
+    *   `utils`
+    *   `models`
+*   **requests**
+*   **io** 
+*   **torch.utils.data:**
+    *   `DataLoader`
+*   **tqdm** 
+*   **pytorch-grad-cam** 
+*   **kagglehub**
+   
 ## Autor
 
-* **Kevin Ortiz**
+* **Almendra Orellana, Kevin Ortiz, Jorge Pastene**
 * [GitHub](https://github.com/Kevin2558)
 * [LinkedIn](https://www.linkedin.com/in/kevin-ortiz-collao-16376a275/)
